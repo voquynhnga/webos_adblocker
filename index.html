@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube AdBlock</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YouTube AdBlock cho webOS</h1>
+            <div class="status" id="status">Đang tải...</div>
+        </header>
+        
+        <main>
+            <section class="controls">
+                <button id="toggleBlock" class="btn-primary">Bật chặn quảng cáo</button>
+                <button id="updateLists" class="btn-secondary">Cập nhật danh sách</button>
+                <button id="settings" class="btn-secondary">Cài đặt</button>
+            </section>
+            
+            <section class="stats">
+                <div class="stat-item">
+                    <h3>Quảng cáo đã chặn</h3>
+                    <span id="blockedCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <h3>Domain trong danh sách</h3>
+                    <span id="domainCount">0</span>
+                </div>
+            </section>
+            
+            <section class="logs">
+                <h3>Nhật ký hoạt động</h3>
+                <div id="logContainer"></div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/dns-proxy.js"></script>
+    <script src="js/blocklist-manager.js"></script>
+</body>
+</html>
